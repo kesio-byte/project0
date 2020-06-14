@@ -1,0 +1,449 @@
+/*My scss variables*/
+$myBox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+$myVertical-align: middle;
+$myText:center;
+/*My nested scss files*/
+.header1 {
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 3px;
+   padding-left: 30px;
+ }
+.header2{
+   @extend .header1;
+   text-align: center;
+   margin: 0;
+   color: red;
+ }
+
+.img1 {
+    vertical-align: $myVertical-align;
+}
+.img2 {
+    @extend .img1;
+    border-radius: 50%;
+    float: right;
+    box-shadow: $myBox-shadow;
+ }
+ .nav {
+   border: 1px solid #ddd;
+   padding: 30px;
+   flexi: 1;
+ }
+ .nav1 {
+     @extend .nav;
+       box-shadow: $myBox-shadow;
+       margin-right: 1050px;
+       background-color: teal;
+       text-align: $myText;
+
+   }
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+}
+/**Begining of the List css properties**/
+.lists {
+  border: 1px solid #ddd;
+  padding: 20px;
+  fexi: 1;
+  margin-top: 10px 0px 0px 20px;
+
+ul {
+  list-style-type: none;
+  color: blue;
+  background-color: yellow;
+  text-align: $myText;
+}
+ol {
+  list-style-type: none;
+  color: red;
+  background-color: black;
+  text-align: $myText;
+  }
+}
+*, *:before, *:after {
+            box-sizing: inherit;
+           font-family: Helvetica, sans-serif,serif;
+}
+
+a {
+  text-decoration: none;
+ }
+
+.clearfix {
+   overflow: auto;
+   padding-top: 0px;
+   box-shadow: $myBox-shadow; }
+
+/*My nav bar properties and selectors*/
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 15%;
+  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: $myText;
+  /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+ }
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation
+links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    }
+  }
+
+ /*Slideshow container*/
+.slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+          box-shadow: $myBox-shadow;
+          padding: 20px;
+         background-color: #f1f1f1;
+          margin-top: 40px;
+        }
+/*Previous and next buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+ }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+ }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+ }
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 25px;
+  padding: 18px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+ }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 25px;
+  padding: 18px 12px;
+  position: absolute;
+  margin-top: 0;
+ }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ }
+
+.active, .dot:hover {
+  background-color: #717171;
+ }
+
+/* Fading animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+    }
+   }
+/*End of the slide properties and selectors*/
+#footer {
+  background-color: black;
+  color: white;
+  clear: both;
+  text-align: $myText;
+  padding: 40px;
+  margin-bottom: 10px;
+ }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+#container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0px;
+  box-shadow: $myBox-shadow; }
+
+.slideshow-tab {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-shadow: $myBox-shadow;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin-top: 40px; }
+
+.column {
+  float: left;
+  width: 50.3%;
+  margin-bottom: 16px;
+  padding: 0 8px; }
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    }
+  }
+.card {
+  box-shadow: $myBox-shadow; }
+
+.container {
+  padding: 0 16px; }
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.title {
+  color: grey; }
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: $myText;
+  cursor: pointer;
+  width: 100%; }
+
+.button:hover {
+  background-color: #555; }
+
+/**Profile and list beginging*/
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px; }
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px; }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+     }
+    }
+/**End of the list and profile*/
+/* Style the counter cards */
+.card {
+  box-shadow: $myBox-shadow;
+  padding: 16px;
+  text-align: $myText;
+  background-color: #f1f1f1; }
+
+/*Price tags beginging*/
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px; }
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.price:hover {
+  box-shadow: $myBox-shadow; }
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px; }
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: $myText; }
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px; }
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: $myText;
+  text-decoration: none;
+  font-size: 18px; }
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+    display: block;
+     }
+ }
+#slides {
+  text-align: $myText;
+}
+
+/**End of price tag*/
+/**Properties and table beginging*/
+/**Clomun begining properties and ..*/
+.col-container {
+  display: flex;
+  width: 100%;
+  box-shadow: $myBox-shadow; }
+
+.col {
+  flex: 1;
+  padding: 16px; }
+
+/*Table begining properties and methods*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd; }
+
+th, td {
+  text-align: left;
+  padding: 8px; }
+
+/**End of the table properties css*/
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; }
+
+/**Table ending**/
+/**Properties and table ending*/
+@media screen and (max-width: 650px) {
+  .col-container {
+    width: 100%;
+    display: block;
+    }
+   }
+/*BeginingThe link button properties*/
+.newlink:link, .newlink:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: $myText;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.newlink:hover, .newlink:active {
+                  background-color: red; }
+
+/*Ending The link button properties*/
+h2 {
+  text-align: $myText; }

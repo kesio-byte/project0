@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Chiko's ArtGallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+/*  padding: 20px;*/
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.mylist{
+     padding-top:20px;
+     padding-bottom: 20px;
+     margin-top: 0;
+     background-color: lightblue;
+     font-size:20px;
+}
+.img1 {
+  width:200px;
+  height:400px;
+  object-fit:cover;
+}
+</style>
+</head>
+<body>
+  <ul>
+  <div class="mylist">
+      <li style="display: inline; padding-right: 100px;">
+      <a href="4-ways-meatshop.html">Home</a></li>
+      <li style="display: inline; padding-right: 100px;">
+      <a href="checkout form.html">Checkout Form</a></li>
+      <li style="display: inline; padding-right: 100px;">
+      <a href="login form.html">Login Form</a></li>
+      <li style="display: inline; padding-right: 100px;">
+      <a href="register form.html">Register Form</a></li>
+      <li style="display: inline; padding-right: 100px;">
+      <a href="Chiko's gallery.html">Chiko's ArtGallery</a></li>
+ </div>
+</ul>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>@CHIKOMTEWA.COM</h1>
+
+<h2>Chiko's Master Pieces</h2>
+<p>
+  Thanks enjoy my pieces you are most welcome.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img class="img1" src="chiko1.jpg" alt="Partying gents">
+      <h3>Chiko's Drawings</h3>
+      <p>This is my first drawing two baddies enjoying the weekend in the rular area of Neno Malawi.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="img1"src="chiko2.jpg" alt="chiko2">
+      <h3>Chiko's Drawings</h3>
+      <p>After a while i thought of introducing the box man celebrating the month end with cash in his pocket.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="img1"src="chiko3.jpg" alt="chiko3">
+      <h3>Chiko's Drawings</h3>
+      <p>Budies what else do the know apart from drinkings?It's weekend of month-end for them drinking is the answer</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img class="img1" src="chiko4.jpg" alt="chiko4">
+      <h3>Chiko's Drawings</h3>
+      <p>It is time to work no more boozing around or playing around until the month-end it is when will have fun.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <div style="width:100%;height:900px;">
+  <img src="chiko3.jpg" alt="Norway" style="float:left;width:50%;height:100%;object-fit:cover;">
+  <img src="chiko2.jpg" alt="Paris" style="float:left;width:50%;height:100%;object-fit:cover;">
+<!--/div>
+  <img src="chiko5.jpg" alt="Chiko5" style ="width:100%  ;height: 1050px; object-fit:cover;">
+  <h3>Chiko's Master Pieces</h3>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div-->
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
