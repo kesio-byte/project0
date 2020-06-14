@@ -1,0 +1,365 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+    <head>
+       <meta charset="utf-8">
+        <title>4-ways-meatshop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+             /*Table begining properties and methods*/
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          border: 1px solid #ddd; }
+
+        th, td {
+          text-align: left;
+          padding: 8px; }
+
+        /**End of the table properties css*/
+
+        </style>
+
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="css/addtohomescreen.css">
+       <script src="js/addtohomescreen.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+   </head>
+   <body>
+<div class="container-fluid">
+     <!-- The navigation menu -->
+    <div class="navbar">
+       <a class="active" href="#">Home</a>
+       <a href="#C1">Lists</a>
+       <a href="#C2">Plans</a>
+       <a href="#C3">About</a>
+       <a href="#C4">Contacts</a>
+     </div>
+     <!-- End navigation menu -->
+
+ <!-- header-->
+   <div class="clearfix">
+  <img class="img2" src="boss.jpg" alt="stiviemtewa" width="100" height="100">
+  <h1 class="header1">4-ways-MeatShop</h1>
+  <ul>
+  <li style="display: inline; padding-right: 170px;">
+    <a href="checkout form.html">Checkout Form</a></li>
+  <li style="display: inline; padding-right: 170px;">
+    <a href="login form.html">Login Form</a></li>
+  <li style="display: inline; padding-right: 170px;">
+    <a href="register form.html">Register Form</a></li>
+  <li style="display: inline; padding-right: 170px;">
+    <a href="chiko's gallery.html">Chiko's ArtGallery</a></li>
+</ul>
+</div>
+<!-- End header-->
+
+     <!--Beginig of slides-->
+     <div class="slideshow-container">
+     <div class="mySlides fade">
+       <div class="numbertext">1 / 3</div>
+       <img src="meat.jpg" style="width:100%; height:600px">
+       <div class="text">Fish</div>
+     </div>
+
+     <div class="mySlides fade">
+       <div class="numbertext">2 / 3</div>
+       <img src="pack.jpg" style="width:100%;height:600px">
+       <div class="text">Sousanges</div>
+     </div>
+
+     <div class="mySlides fade">
+       <div class="numbertext">3 / 3</div>
+       <img src="chicken.jpg" style="width:100%; height:600px">
+       <div class="text">Chicken Pieces</div>
+     </div>
+
+     <!--a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a-->
+     </div>
+     <br>
+
+     <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(1)"></span>
+       <span class="dot" onclick="currentSlide(2)"></span>
+       <span class="dot" onclick="currentSlide(3)"></span>
+
+     </div>
+
+ <script>
+     var slideIndex = 0;
+     showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<!--End of slides-->
+
+<!--Beginig links-->
+    <!--Column begining-->
+    <h2 id ="C1"></h2>
+
+    <div class="col-container">
+
+      <div class="col">
+        <h2>Video</h2>
+
+  <iframe width="420" height="345" src=
+  ""https://www.youtube.com/embed/gMf_rTZNHMI">
+</iframe>
+
+  </div>
+      <div class="col">
+        <h2>lists</h2>
+        <div class="lists">
+        <ul>
+          <li>Barbacue</li>
+          <li>Sousanges
+          <li>Fish</li>
+          </ul>
+          <ol>
+          <li>Prego</li>
+          <li>Steak</li>
+          <li>Bones</li>
+        </ol>
+      </div>
+    </div>
+
+      <div class="col">
+        <!--Table begining-->
+       <h2>Tables</h2>
+        <div style="overflow-x:auto;">
+          <table>
+             <tr>
+               <th>First Name</th>
+               <th>Last Name</th>
+               <th>Phone Number</th>
+            </tr>
+             <tr>
+               <td>Stivie</td>
+               <td>Mtewa</td>
+               <td>000 000 000</td>
+             </tr>
+             <tr>
+                <td>Kesio</td>
+                <td>Mtewa</td>
+                <td>000 000 000</td>
+
+             </tr>
+             <tr>
+                   <td>Wellison</td>
+                   <td>Lester</td>
+                   <td>000 000 000</td>
+             </tr>
+             <tr>
+                <td>Chikondi</td>
+                <td>Mtewa</td>
+                <td>000 000 000</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+  <!--Table ending-->
+    <div class="container-fluid">
+  <!--Profile Beginig-->
+  <h2>Who Are We</h2>
+  <div id="container">
+  <p class="text-info">We are in Chikonde, 10kms from
+        Zalewa turnoff and 75kms from Neno turnoff,
+        thus between Chikonde markert,Chiwale
+        and Neno girls Secondry School along Litchowa
+        and Neno turnoff road, thus in the South rigion
+        of Malawi.</p>
+        <p class="text-info">  Chikonde is the main town
+         of Neno Boma.It is the most populous town in Neno
+        district,with a metropolitan area of over
+        350 thousand, inhabitats.
+        Standing between the rivers Chiwale, Asumi
+        and Wankhulumadzi, Chikonde has been
+        a mojor settlement for two millennia,its history
+        going back to its founding by the Ngoni people,
+        who migritated from SouthAfrica 19 centruary ago
+        and name it Chikonde because of the red soil type.
+      </p>
+    </div>
+  </div>
+  <!--End of profile and links-->
+  <!--Meet our team begging-->
+<h2 id="C3">"Meet Our Team"</h2>
+<div class="container-fluid">
+<div class="col-container">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="img1" src="boss1.jpg" alt="Stivie" style="width:100%">
+      <div class="container">
+        <h2>Stivie Mtewa</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Meeting customers needs.</p>
+        <p>stiviemtewa@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="img1" src="kesio.jpg" alt="Kesio" style="width:100%">
+      <div class="container">
+        <h2>Kesio Mtewa</h2>
+        <p class="title">StoresMan</p>
+        <p>Stocking for customers.</p>
+        <p>kesiomtewa@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img class ="img1" src="Willi.jpg" alt="Willi" style="width:100%">
+      <div class="container">
+        <h2>Wilie Lester</h2>
+        <p class="title">ButcherMan</p>
+        <p>Available for you 24hrs.</p>
+        <p>WilieLester@yahoo.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="Chiko.jpg" alt="Chikondi" style="width:100%">
+      <div class="container">
+        <h2>Chiko Mtewa</h2>
+        <p class="title">SellsMan</p>
+        <p>Call and am Available.</p>
+        <p>chikomtewa@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--Meet our team End-->
+
+<!--flexi box Price Tags-->
+
+<h2 id ="C2"></h2>
+
+<h2>Pricing Tables</h2>
+<div class="col-container">
+<div class="container-fluid">
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">K22 000.99 / month</li>
+    <li>1kg Steak</li>
+    <li>1kg Barbacue </li>
+    <li>1kg Chicken</li>
+    <li>1kg Sousanges</li>
+
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Pro</li>
+    <li class="grey">k55 000.00 / month</li>
+    <li>2kg Steak</li>
+    <li>2kg Barbacue</li>
+    <li>2kg Chicken </li>
+    <li>2kg Sousanges</li>
+
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey"> k149 000.99 / month</li>
+    <li>5kg Steak</li>
+    <li>5kg Barbacue</li>
+    <li>5kg Chicken</li>
+    <li>5kg Sousanges</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+</div>
+</div>
+<!--End of flexi box-->
+<!--Beginig of the Contact form-->
+
+<div class="container-fluid">
+
+<h2 id ="C4">Contact Form</h2>
+  <form action="/action_page.php"><h3 id ="C4"></h3>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Area</label>
+    <select id="country" name="country">
+      <option value="australia">Chikonde</option>
+      <option value="canada">Khukuzalira</option>
+      <option value="usa">Kamoto</option>
+      <option value="usa">Donda</option>
+      <option value="usa">George</option>
+      <option value="usa">Matandani</option>
+      <option value="usa">Litchowa</option>
+      <option value="usa">Belo</option>
+      <option value="usa">Chiwale</option>
+      <option value="usa">Chifwenthe</option>
+      <option value="usa">Besi</option>
+      <option value="usa">Kabale</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.."
+    style="height:200px"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<br>
+<!--End of Contact Form-->
+
+<!--Footer-->
+      <div id = "footer">
+          Copyright @ 4-ways-meatshop.com.
+                <p> by kesiomtewa.</p>
+      </div>
+</div>
+  <!--end Footer-->
+
+  </body>
+</html>
